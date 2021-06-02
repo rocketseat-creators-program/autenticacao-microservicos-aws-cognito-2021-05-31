@@ -1,0 +1,19 @@
+{
+  "name": "user-service",
+  "version": "1.0.0",
+  "description": "Example demonstrates how to setup a simple HTTP GET endpoint",
+  "author": "",
+  "license": "MIT",
+  "main": "login.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "dependencies": {
+    "amazon-cognito-identity-js": "^5.0.2",
+    "aws-sdk": "^2.918.0"
+  },
+  "devDependencies": {
+    "serverless-offline": "^7.0.0"
+  }
+}

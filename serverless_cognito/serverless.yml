@@ -1,0 +1,24 @@
+service: user-service
+
+frameworkVersion: "2"
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  login:
+    handler: login.submit
+    events:
+      - http:
+          path: login
+          method: post
+  register:
+    handler: register.submit
+    events:
+      - http:
+          path: register
+          method: post
+
